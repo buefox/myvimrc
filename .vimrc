@@ -1,3 +1,4 @@
+" Vundle
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -21,16 +22,22 @@ call vundle#end()
 
 filetype plugin indent on
 
+" Color Theme config
 set number
 set background=dark
 syntax enable
 colorscheme molokai
+
+" Lightline config
 set laststatus=2
 set noshowmode
 
+" Some key mappings
 map <F1> :NERDTreeToggle<CR>
 map ; :Files<CR>
 map <F7> :tabp<CR>
 map <F8> :tabn<CR>
+
+" Set trailing tabs or spaces visible
 set listchars=tab:>=,trail:°
 set list
